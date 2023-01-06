@@ -1,7 +1,7 @@
 ## Weather App
 
 ```
--   Website para consulta de dados meteorologicos de cidades ou países.
+Website para consulta de dados meteorologicos de cidades ou países.
 ```
 
 ## Tecnologias
@@ -19,7 +19,8 @@
 ## Recursos
 
 ```
--   Sistema de busca através do nome da região
+-   Dados meteorologicos
+-   busca através do nome da região
 ```
 
 ## Instalação
