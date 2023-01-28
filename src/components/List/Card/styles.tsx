@@ -1,13 +1,13 @@
 import styled from "styled-components";
 
 export const Container = styled.li`
-    width: min(100%, 22rem);
+    width: min(100%, 18rem);
     height: min-content;
-    padding: ${({ theme }) => theme.spacing.sm} ${({ theme }) => theme.spacing.lg};
+    padding: ${({ theme }) => theme.spacing.lg};
     display: grid;
     grid-template: repeat(3, min-content) / 100%;
-    row-gap: ${({ theme }) => theme.spacing.md};
-    background-color: ${({ theme }) => theme.color.tertiary};
+    row-gap: ${({ theme }) => theme.spacing.xm};
+    background-color: ${({ theme }) => theme.colors.primary};
     border-radius: ${({ theme }) => theme.border.radius};
 `;
 
@@ -19,20 +19,20 @@ export const Id = styled.div`
     column-gap: ${({ theme }) => theme.spacing.sm};
     align-items: center;
 
-    .id__icon {
+    .Id__icon {
         font-size: ${({ theme }) => theme.icon.secondary};
-        color: ${({ theme }) => theme.color.secondary};
+        color: ${({ theme }) => theme.colors.tertiary};
     }
 
-    .id__name {
+    .Id__name {
         font: ${({ theme }) => theme.typography.md};
-        color: ${({ theme }) => theme.color.secondary};
+        color: ${({ theme }) => theme.colors.tertiary};
         text-align: center;
     }
 
-    .id__country {
+    .Id__country {
         font: ${({ theme }) => theme.typography.md};
-        color: ${({ theme }) => theme.color.secondary};
+        color: ${({ theme }) => theme.colors.tertiary};
     }
 `;
 
@@ -43,7 +43,7 @@ export const State = styled.section`
     grid-template: repeat(2, min-content) / 100%;
     justify-items: center;
 
-    .texts {
+    .State__info {
         width: 100%;
         height: min-content;
         display: grid;
@@ -52,19 +52,19 @@ export const State = styled.section`
         justify-content: center;
         align-items: center;
 
-        .texts__title {
+        .State__title {
             font: ${({ theme }) => theme.typography.lg};
-            color: ${({ theme }) => theme.color.primary};
+            color: ${({ theme }) => theme.colors.secondary};
         }
 
-        .texts__divider {
+        .State__divider {
             font: ${({ theme }) => theme.typography.sm};
-            color: ${({ theme }) => theme.color.primary};
+            color: ${({ theme }) => theme.colors.secondary};
         }
 
-        .texts__text {
+        .State__text {
             font: ${({ theme }) => theme.typography.md};
-            color: ${({ theme }) => theme.color.secondary};
+            color: ${({ theme }) => theme.colors.tertiary};
         }
     }
 `;
@@ -77,15 +77,15 @@ export const Details = styled.section`
     gap: ${({ theme }) => theme.spacing.xm} ${({ theme }) => theme.spacing.md};
     justify-content: space-evenly;
 
-    .details__temp {
+    .Details__temp {
         width: 100%;
         height: min-content;
         font: ${({ theme }) => theme.typography.xl};
-        color: ${({ theme }) => theme.color.primary};
+        color: ${({ theme }) => theme.colors.secondary};
         text-align: center;
     }
 
-    .card {
+    .Details__card {
         width: max-content;
         height: min-content;
         display: grid;
@@ -93,14 +93,14 @@ export const Details = styled.section`
         column-gap: ${({ theme }) => theme.spacing.xm};
         align-items: center;
 
-        .card__icon {
+        .Details__icon {
             font-size: ${({ theme }) => theme.icon.secondary};
-            color: ${({ theme }) => theme.color.secondary};
+            color: ${({ theme }) => theme.colors.secondary};
         }
 
-        .card__text {
+        .Details__text {
             font: ${({ theme }) => theme.typography.md};
-            color: ${({ theme }) => theme.color.secondary};
+            color: ${({ theme }) => theme.colors.secondary};
             text-align: center;
         }
     }

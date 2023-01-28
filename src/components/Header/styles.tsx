@@ -14,72 +14,25 @@ export const Texts = styled.div`
     height: min-content;
     display: grid;
     grid-template: repeat(2, min-content) / 100%;
-    row-gap: ${({ theme }) => theme.spacing.xm};
+    row-gap: ${({ theme }) => theme.spacing.sm};
 
-    .texts__title {
+    .Texts__title {
         font: ${({ theme }) => theme.typography.xl};
-        color: ${({ theme }) => theme.color.primary};
+        color: ${({ theme }) => theme.colors.secondary};
         text-align: center;
 
-        .texts__title--variant {
-            color: ${({ theme }) => theme.color.brand};
+        .Texts__title--variant {
+            color: ${({ theme }) => theme.colors.brand};
         }
     }
 
-    .texts__text {
+    .Texts__text {
         font: ${({ theme }) => theme.typography.md};
-        color: ${({ theme }) => theme.color.secondary};
+        color: ${({ theme }) => theme.colors.tertiary};
         text-align: center;
 
-        .texts__text--variant {
-            color: ${({ theme }) => theme.color.brand};
+        .Texts__text--variant {
+            color: ${({ theme }) => theme.colors.brand};
         }
-    }
-`;
-
-export const Form = styled.form`
-    position: relative;
-    width: min(100%, 38rem);
-    height: min-content;
-    padding: ${({ theme }) => theme.spacing.sm} ${({ theme }) => theme.spacing.lg};
-    display: grid;
-    grid-template: min-content / 1fr max-content;
-    column-gap: ${({ theme }) => theme.spacing.md};
-    align-items: center;
-    background-color: ${({ theme }) => theme.color.tertiary};
-    border-radius: ${({ theme }) => theme.border.radius};
-
-    .form__input {
-        width: 100%;
-        height: min-content;
-        background-color: transparent;
-        border: none;
-        outline: none;
-        font: ${({ theme }) => theme.typography.md};
-        color: ${({ theme }) => theme.color.secondary};
-    }
-
-    .button {
-        width: max-content;
-        height: min-content;
-        background-color: transparent;
-        border: none;
-        cursor: pointer;
-
-        .button__icon {
-            font-size: ${({ theme }) => theme.icon.primary};
-            color: ${({ theme }) => theme.color.brand};
-        }
-    }
-
-    .form__error {
-        position: absolute;
-        top: calc(100% + ${({ theme }) => theme.spacing.xm});
-        left: 0;
-        width: 100%;
-        height: min-content;
-        font: ${({ theme }) => theme.typography.sm};
-        color: ${({ theme }) => theme.color.error};
-        text-align: center;
     }
 `;

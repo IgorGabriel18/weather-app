@@ -3,13 +3,7 @@
         "browser": true,
         "es2021": true
     },
-    "extends": [
-        "eslint:recommended",
-        "plugin:react/recommended",
-        "plugin:@typescript-eslint/recommended",
-        "prettier",
-        "plugin:prettier/recommended"
-    ],
+    "extends": ["eslint:recommended", "plugin:react/recommended", "plugin:@typescript-eslint/recommended", "prettier"],
     "overrides": [],
     "parser": "@typescript-eslint/parser",
     "parserOptions": {
@@ -18,22 +12,17 @@
     },
     "plugins": ["react", "@typescript-eslint", "eslint-plugin-import-helpers"],
     "rules": {
-        "indent": ["error", 4, { "SwitchCase": 1, "ignoredNodes": ["ConditionalExpression"] }],
+        "indent": ["error", 4],
         "linebreak-style": ["error", "unix"],
         "quotes": ["error", "double"],
         "semi": ["error", "always"],
         "react/react-in-jsx-scope": "off",
-        "react/jsx-no-target-blank": "off",
-        "react/no-unescaped-entities": "off",
         "import-helpers/order-imports": [
             "warn",
             {
                 "newlinesBetween": "always",
-                "groups": ["module", "/^@shared/", ["parent", "sibling", "index"]],
-                "alphabetize": {
-                    "order": "asc",
-                    "ignoreCase": true
-                }
+                "groups": ["module", ["/^#/", "sibling"]],
+                "alphabetize": { "order": "asc", "ignoreCase": true }
             }
         ]
     }

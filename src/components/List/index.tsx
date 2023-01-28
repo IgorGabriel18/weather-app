@@ -1,10 +1,10 @@
-import { WeatherContext } from "@contexts/WeatherContext";
 import { useContext } from "react";
 
 import { Card } from "./Card";
 import { Container } from "./styles";
+import { WeatherContext } from "#contexts/WeatherContext";
 
-export function Main() {
+export function List() {
     const { data } = useContext(WeatherContext);
 
     return (
