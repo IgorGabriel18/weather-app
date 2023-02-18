@@ -1,18 +1,12 @@
-import { Form } from "./Form";
-import { Container, Texts } from "./styles";
+import { Container } from "./styles";
 
 export function Header() {
     return (
         <Container>
-            <Texts>
-                <h1 className="Texts__title">
-                    Discover the <span className="Texts__title--variant">weather</span> in your city
-                </h1>
-                <p className="Texts__text">
-                    Get the weather for your <span className="Texts__text--variant">region</span> anytime you want
-                </p>
-            </Texts>
-            <Form />
+            <h1 className="Container__title">Weather App</h1>
+            <p className="Container__description">
+                Discover your local <span className="Container__highlight">weather</span>, plan your day
+            </p>
         </Container>
     );
 }

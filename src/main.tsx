@@ -1,16 +1,17 @@
 import ReactDOM from "react-dom/client";
+import { QueryClient, QueryClientProvider } from "react-query";
 import { ThemeProvider } from "styled-components";
 
+import { theme } from "~styles/theme";
+
 import { App } from "./App";
-import { WeatherContextProvider } from "#contexts/WeatherContext";
-import GlobalStyles from "#styles/GlobalStyles";
-import { theme } from "#styles/theme";
+
+const queryClient = new QueryClient();
 
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
-    <WeatherContextProvider>
+    <QueryClientProvider client={queryClient}>
         <ThemeProvider theme={theme}>
-            <GlobalStyles />
             <App />
         </ThemeProvider>
-    </WeatherContextProvider>
+    </QueryClientProvider>
 );

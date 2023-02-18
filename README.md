@@ -1,48 +1,31 @@
-## Weather App
+# Weather App
 
-```
-Site para consulta de dados meteorológicos.
-```
+Website for querying meteorological data.
 
-## RECURSOS
+### OBJECTIVE
 
-```
-- Busca de região estravés do nome.
-- Dados meteorológicos da região informada.
-```
+-   Setting and Using Environment Variables in Vite.js
+-   Apply form validation
+-   Configure and use React Query for HTTP calls
 
-## OBJETIVO
+### FEATURES
 
-```
-- Aplicar validação no formulário
-- Criação e uso do formulário com react hook form
-```
+-   Location search system
+-   API response handling
+-   Visualization of searched weather, day, and upcoming hours.
 
-## TECNOLOGIAS
+### TECHNOLOGIES
 
-```
-- React.js
-- TypeScript
-- Styled-components
-- ContextApi
-- Axios
-- React Hook Form
-- Yup
-```
+-   React.js
+-   TypeScript
+-   Styled-components
+-   Axios
+-   React Query
+-   React Hook Form
+-   Yup
 
-## DESENVOLVIMENTO
+### Usage
 
-```
-- SPA (Single Page Application)
-- Eslint, prettier e editorConfig
-- Clean Code
-- BEM Architecture
-- Validação de form
-```
-
-## INSTALAÇÃO E INICIALIZAÇÃO
-
-```
-- Instalação: dentro da raiz do projeto digite "pnpm install" com o terminal
-- Inicialização: dentro da raiz do projeto digite "pnpm dev" com o terminal
-```
+-   Create an ".env" file at the root of the project and inside the file write `VITE_API_KEY=YOUR_KEY` from the OpenWeatherMap API
+-   Installation: within the project root, type `pnpm i` in the terminal
+-   Initialization: within the project root, type `pnpm dev` in the terminal

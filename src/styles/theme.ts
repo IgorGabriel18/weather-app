@@ -1,10 +1,13 @@
 export const theme = {
+    screen: {
+        breakpoint: "48rem"
+    },
     colors: {
         brand: "#014efd",
-        main: "#0b0c1e",
-        primary: "#16182a",
-        secondary: "#fdfeff",
-        tertiary: "#9ea6a5",
+        main: "#1a1c1e",
+        primary: "#f0f0ee",
+        secondary: "#4d5051",
+        tertiary: "#202329",
         variant: {
             error: "#ee2525"
         }
@@ -18,13 +21,13 @@ export const theme = {
         xxl: "6rem"
     },
     typography: {
-        sm: "normal 400 0.875rem/normal 'Montserrat', sans-serif",
+        sm: "normal 500 0.75rem/normal 'Montserrat', sans-serif",
         md: "normal 400 1rem/normal 'Montserrat', sans-serif",
-        lg: "normal 500 1.25rem/normal 'Montserrat', sans-serif",
+        lg: "normal 500 1.75rem/normal 'Montserrat', sans-serif",
         xl: "normal 700 2.25rem/normal 'Montserrat', sans-serif"
     },
     border: {
-        radius: "2rem"
+        radius: "1.5rem"
     },
     icon: {
         primary: "1.75rem",
