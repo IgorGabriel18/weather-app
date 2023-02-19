@@ -11,8 +11,10 @@ import { getWeather } from "~services/index";
 import { GlobalStyles } from "~styles/GlobalStyles";
 
 export function App() {
-    const [search, setSearch] = useState("New York");
-    const { data, isLoading, isSuccess } = useQuery("weather", () => getWeather(search));
+    const [search, setSearch] = useState("");
+    const { data, isLoading, isSuccess } = useQuery(["weather", search], () => getWeather(search), {
+        staleTime: 0
+    });
 
     return (
         <>
